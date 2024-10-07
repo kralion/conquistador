@@ -11,13 +11,13 @@ const Footer = () => {
         {/* start */}
         <div className="col-span-1 md:col-span-2">
           <a href="/" className="">
-            <img src="/logo.svg" alt="logo" className="lg:w-1/2 w-1/3 h-1/2" />
+            <img src="/logo.svg" alt="logo" className="lg:w-1/2 " />
           </a>
           <p className="tracking-tight text-lg px-4 lg:pr-14  font-jost text-text-gray pt-[18px] pb-[33px]">
             Disfruta de nuestro hotel con las comodidades que buscas, tu hogar
             lejos de casa.
           </p>
-          <div className="flex gap-5 md:gap-[54px]">
+          {/* <div className="flex gap-5 md:gap-[54px]">
             <a href="/">
               <Facebook />
             </a>
@@ -30,7 +30,7 @@ const Footer = () => {
             <a href="/">
               <Instagram />
             </a>
-          </div>
+          </div> */}
         </div>
         <div className="col-span-1 flex flex-col gap-4">
           <h5 className="text-primary-200 font-dm text-[22px] lg:text-[25px] leading-loose">
@@ -62,18 +62,30 @@ const Footer = () => {
             Habitaciones
           </h5>
           <div className="flex flex-col gap-6">
-            <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
-              Simples
-            </p>
-            <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
-              Dobles
-            </p>
-            <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
+            <a
+              href="/simple"
+              className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray"
+            >
+              Simple
+            </a>
+            <a
+              href="/doble"
+              className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray"
+            >
+              Doble
+            </a>
+            <a
+              href="/matrimonial"
+              className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray"
+            >
               Matrimoniales
-            </p>
-            <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
+            </a>
+            <a
+              href="/king-queen"
+              className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray"
+            >
               King & Queen
-            </p>
+            </a>
           </div>
         </div>
         <div className="col-span-1 flex flex-col gap-4">
