@@ -7,11 +7,14 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        hero: "url('/banner.png')",
+        hero: "url('https://images.pexels.com/photos/167533/pexels-photo-167533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
         main: "url('/Background.jpg')",
-        about: "url('/aboutpage-bg.png')",
-        services: "url('/servicespage-bg.jpg')",
-        contact: "url('/contactpage-bg.jpg')",
+        about:
+          "url('https://images.pexels.com/photos/3215519/pexels-photo-3215519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
+        services:
+          "url('https://images.pexels.com/photos/1743231/pexels-photo-1743231.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
+        contact:
+          "url('https://images.pexels.com/photos/172872/pexels-photo-172872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
       },
       fontFamily: {
         dm: ["DM Serif Display", "serif"],

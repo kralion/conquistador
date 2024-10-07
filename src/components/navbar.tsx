@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Logo from "../icons/logo.tsx";
-import useMediaQuery from "../utils/useMediaQuery.ts";
+import Logo from "../icons/logo";
+import useMediaQuery from "../utils/useMediaQuery";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
@@ -10,26 +10,25 @@ const Navbar = () => {
   const linkStyle = "text-xl leading-6 font-jost text-primary-200";
 
   return (
-    <div className="max-w-[1200px] px-12 xl:px-0 m-auto w-full py-11 flex justify-between items-center">
+    <div className=" lg:px-12 px-4  m-auto w-full py-11 flex justify-between items-center">
       <a href="/">
-        {" "}
-        <Logo />
+        <img src="/logo.svg" alt="logo" className="lg:w-1/2 w-1/3 h-1/2" />
       </a>
 
       {/* Nav List for Desktop */}
       {matches && (
         <nav className="flex flex-row gap-6">
           <a href="/" className={linkStyle}>
-            Home
+            Inicio
           </a>
-          <a href="/about" className={linkStyle}>
-            About Us
+          <a href="/nosotros" className={linkStyle}>
+            Nosotros
           </a>
-          <a href="/services" className={linkStyle}>
-            Services
+          <a href="/habitaciones" className={linkStyle}>
+            Habitaciones
           </a>
-          <a href="/contact" className={linkStyle}>
-            Contact Us
+          <a href="/contacto" className={linkStyle}>
+            Contacto
           </a>
         </nav>
       )}
@@ -65,16 +64,16 @@ const Navbar = () => {
           className="flex flex-col fixed h-screen bg-white w-[75%] md:w-[90%] text-black bottom-0 left-0 gap-6 items-center justify-center"
         >
           <a href="/" className={linkStyle}>
-            Home
+            Inicio
           </a>
-          <a href="/about" className={linkStyle}>
-            About Us
+          <a href="/nosotros" className={linkStyle}>
+            Nosotros
           </a>
-          <a href="/services" className={linkStyle}>
-            Services
+          <a href="/habitaciones" className={linkStyle}>
+            Habitaciones
           </a>
-          <a href="/contact" className={linkStyle}>
-            Contact Us
+          <a href="/contacto" className={linkStyle}>
+            Contacto
           </a>
         </motion.nav>
       )}

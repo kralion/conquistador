@@ -11,11 +11,11 @@ const Footer = () => {
         {/* start */}
         <div className="col-span-1 md:col-span-2">
           <a href="/" className="">
-            <Logo />
+            <img src="/logo.svg" alt="logo" className="lg:w-1/2 w-1/3 h-1/2" />
           </a>
-          <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray pt-[18px] pb-[33px]">
-            It is a long established fact that a reader will be distracted
-            lookings.
+          <p className="tracking-tight text-lg px-4 lg:pr-14  font-jost text-text-gray pt-[18px] pb-[33px]">
+            Disfruta de nuestro hotel con las comodidades que buscas, tu hogar
+            lejos de casa.
           </p>
           <div className="flex gap-5 md:gap-[54px]">
             <a href="/">
@@ -34,61 +34,61 @@ const Footer = () => {
         </div>
         <div className="col-span-1 flex flex-col gap-4">
           <h5 className="text-primary-200 font-dm text-[22px] lg:text-[25px] leading-loose">
-            Pages
+            Páginas
           </h5>
           <div className="flex flex-col gap-6">
             <a
-              href="/about"
+              href="/nosotros"
               className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray"
             >
-              About Us
+              Nosotros
             </a>
             <a
-              href="/services"
+              href="/habitaciones"
               className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray"
             >
-              Services
+              Habitaciones
             </a>
             <a
-              href="/contact"
+              href="/contacto"
               className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray"
             >
-              Contact Us
+              Contacto
             </a>
           </div>
         </div>
         <div className="col-span-1 flex flex-col gap-4">
           <h5 className="text-primary-200 font-dm text-[22px] lg:text-[25px] leading-loose">
-            Services
+            Habitaciones
           </h5>
           <div className="flex flex-col gap-6">
             <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
-              Kitchen
+              Simples
             </p>
             <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
-              Living Room
+              Dobles
             </p>
             <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
-              Dining Hall
+              Matrimoniales
             </p>
             <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
-              Bedroom
+              King & Queen
             </p>
           </div>
         </div>
         <div className="col-span-1 flex flex-col gap-4">
           <h5 className="text-primary-200 font-dm text-[22px] lg:text-[25px] leading-loose">
-            Contact
+            Contacto
           </h5>
           <div className="flex flex-col gap-6">
             <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
-              55 East Birchwood Ave. Brooklyn, New York 11201
+              Jr. Miguel Untiveros 257
             </p>
             <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
-              contact@interno.com
+              hotelconquistador@gmail.com
             </p>
             <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
-              (123) 456 - 7890
+              +51 999-999-999
             </p>
           </div>
         </div>
