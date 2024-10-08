@@ -80,12 +80,6 @@ const Footer = () => {
             >
               Matrimoniales
             </a>
-            <a
-              href="/king-queen"
-              className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray"
-            >
-              King & Queen
-            </a>
           </div>
         </div>
         <div className="col-span-1 flex flex-col gap-4">

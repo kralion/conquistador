@@ -10,9 +10,9 @@ const Navbar = () => {
   const linkStyle = "text-xl leading-6 font-jost text-primary-200";
 
   return (
-    <div className=" lg:px-12 px-4  m-auto w-full py-11 flex justify-between items-center">
+    <div className=" lg:px-12 px-4  m-auto w-full lg:py-7 py-3 flex  justify-between items-center lg:sticky lg:top-0 lg:z-50 lg:backdrop-blur-lg lg:bg-transparent">
       <a href="/">
-        <img src="/logo.svg" alt="logo" className="lg:w-1/2 w-1/3 h-1/2" />
+        <img src="/logo.svg" alt="logo" className="w-2/3  " />
       </a>
 
       {/* Nav List for Desktop */}
@@ -61,7 +61,7 @@ const Navbar = () => {
         <motion.nav
           initial={{ opacity: 0, x: 25 }}
           animate={{ opacity: 1, x: 0 }}
-          className="flex flex-col fixed h-screen bg-white w-[75%] md:w-[90%] text-black bottom-0 left-0 gap-6 items-center justify-center"
+          className="flex flex-col h-screen fixed z-50  bg-white w-[85%] md:w-[90%] text-black bottom-0 left-0  gap-6 justify-center items-center "
         >
           <a href="/" className={linkStyle}>
             Inicio
