@@ -3,7 +3,7 @@ import Button from "./button.tsx";
 const ContactForm = () => {
   return (
     <div className="col-span-1 lg:col-span-2">
-      <form className="w-full grid grid-cols-2 gap-x-10 gap-y-[50px]">
+      <form className="w-full grid grid-cols-2 gap-x-10 gap-y-[50px]" method="POST" data-netlify="true">
         <label htmlFor="name">
           <input
             type="text"
