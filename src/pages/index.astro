@@ -8,15 +8,18 @@ import Experience from "../components/experience.tsx";
 const services = [
   {
     title: "Habitación Simple",
-    text: "There are many variations of the passages of lorem Ipsum from available, majority.",
+    href: "/simple",
+    text: "Perfecta para viajeros solitarios, cuenta con cama de plaza y media y baño privado. ",
   },
   {
     title: "Habitación Doble",
-    text: "There are many variations of the passages of lorem Ipsum from available, majority.",
+    href: "/doble",
+    text: "Diseñada para dos personas, ofrece camas individuales con diferentes amenities a gusto del huesped. ",
   },
   {
     title: "Habitación Matrimonial",
-    text: "There are many variations of the passages of lorem Ipsum from available, majority.",
+    href: "/matrimonial",
+    text: "Con cama queen size, esta habitación es perfecta para parejas que buscan un ambiente acogedor y privado.",
   },
 ];
 
@@ -78,7 +81,9 @@ const experiences = [
         Descubre el lujo que mereces: relájate, rejuvenece y revive en nuestro
         hotel, tu hogar lejos de casa."
       </p>
-      <Button text="Reservar" />
+      <a href="/contacto">
+        <Button text="Reservar" />
+      </a>
     </div>
   </section>
 
@@ -99,10 +104,10 @@ const experiences = [
               {service.text}
             </p>
             <a
-              href="/services"
-              class="text-text-gray-200 leading-snug text-lg tracking-tight font-jost font-semibold gap-2 py-4 md:py-8 startCenter"
+              href={service.href}
+              class="text-text-gray-200 hover:opacity-80 hover:underline leading-snug text-lg tracking-tight font-jost font-semibold gap-2 py-4 md:py-8 startCenter"
             >
-              Read More <ArrowSec />
+              Ver Más <ArrowSec />
             </a>
           </div>
         );
@@ -121,30 +126,34 @@ const experiences = [
       <h2
         class="text-[30px] text-center capitalize lg:text-left font-dm tracking-wide leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue"
       >
-        We Create The Art Of Stylish Living Stylishly
+        Creamos Estancias Con Estilo
       </h2>
       <p
         class="text-base md:text-[22px] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]"
       >
-        It is a long established fact that a reader will be distracted by the of
-        readable content of a page when lookings at its layouts the points of
-        using that it has a more-or-less normal.
+        En el Hotel Conquistador, ofrecemos un ambiente acogedor y cómodo para
+        que disfrutes de tu estancia en Huanta. Nuestras habitaciones están
+        diseñadas para satisfacer tus necesidades de descanso.
       </p>
       <div class="flex gap-4 pt-3 items-center">
         <CallIcon />
         <p class="flex flex-col text-text-gray-200 font-jost tracking-tight">
-          <span class="text-2xl font-bold leading-9">012345678</span>
-          <span class="text-[22px] leading-8">Call Us Anytime</span>
+          <span class="text-2xl font-bold leading-9">999 999 999</span>
+          <span class="text-[22px] leading-8"
+            >Llámanos en cualquier momento</span
+          >
         </p>
       </div>
-      <a href="/contact">
-        <Button text="Get Free Estimate" />
+      <a href="/contacto">
+        <Button text="Reservar" />
       </a>
     </div>
 
-    <div>
-      <img src="/about-img.png" alt="" />
-    </div>
+    <img
+      src="https://images.pexels.com/photos/186181/pexels-photo-186181.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      alt=""
+      class="rounded-tr-[100px] rounded-bl-[100px]"
+    />
   </section>
 
   <!-- What People Think About Us Section -->

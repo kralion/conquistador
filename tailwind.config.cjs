@@ -7,12 +7,12 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        hero: "url('https://images.pexels.com/photos/167533/pexels-photo-167533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
+        hero: "url('https://images.unsplash.com/photo-1495365200479-c4ed1d35e1aa?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
         main: "url('/Background.jpg')",
         about:
-          "url('https://images.pexels.com/photos/3215519/pexels-photo-3215519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
+          "url('https://images.unsplash.com/photo-1582731489225-24fc0a720737?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
         services:
-          "url('https://images.pexels.com/photos/1743231/pexels-photo-1743231.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
+          "url('https://images.pexels.com/photos/27543242/pexels-photo-27543242/free-photo-of-a-bedroom-with-a-bed-and-a-large-window.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
         simple:
           "url('https://images.unsplash.com/photo-1424847262089-18a6858bd7e2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
         doble:
@@ -20,7 +20,7 @@ module.exports = {
         matrimonial:
           "url('https://images.pexels.com/photos/2506990/pexels-photo-2506990.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
         contact:
-          "url('https://images.pexels.com/photos/172872/pexels-photo-172872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
+          "url('https://images.pexels.com/photos/821754/pexels-photo-821754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
       },
       fontFamily: {
         dm: ["DM Serif Display", "serif"],
