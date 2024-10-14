@@ -61,7 +61,7 @@ const Navbar = () => {
         <motion.nav
           initial={{ opacity: 0, x: 25 }}
           animate={{ opacity: 1, x: 0 }}
-          className="flex flex-col h-screen fixed z-50  bg-white w-[85%] md:w-[90%] text-black bottom-0 left-0  gap-6 justify-center items-center "
+          className="flex flex-col h-100dvh fixed z-50  bg-white w-full text-black bottom-0 left-0 top-32 gap-6 justify-center  items-center "
         >
           <a href="/" className={linkStyle}>
             Inicio
@@ -73,7 +73,7 @@ const Navbar = () => {
             Habitaciones
           </a>
           <a href="/contacto" className={linkStyle}>
-            Contacto
+            Reservar
           </a>
         </motion.nav>
       )}

@@ -7,7 +7,7 @@ const ContactInfo = () => {
     <div className="col-span-1 bg-primary-300 rounded-[30px] px-8 py-[76px] flex flex-col gap-[30px] w-full">
       <h5 className="flex flex-col xl:flex-row gap-4 items-center text-xl font-jost tracking-tight">
         {" "}
-        <Mail /> hotelconquistador@gmail.com
+        <Mail /> hotelconquistadorhuanta@gmail.com
       </h5>
       <h5 className="flex flex-col xl:flex-row gap-4 items-center text-xl font-jost tracking-tight">
         {" "}
@@ -15,7 +15,7 @@ const ContactInfo = () => {
       </h5>
       <h5 className="flex flex-col xl:flex-row gap-4 items-center text-xl font-jost tracking-tight">
         {" "}
-        <Web /> www.granhotelconquistadorhuanta.com
+        <Web /> www.hotelconquistadorhuanta.com
       </h5>
     </div>
   );

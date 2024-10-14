@@ -14,11 +14,11 @@ module.exports = {
         services:
           "url('https://images.pexels.com/photos/27543242/pexels-photo-27543242/free-photo-of-a-bedroom-with-a-bed-and-a-large-window.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
         simple:
-          "url('https://images.unsplash.com/photo-1424847262089-18a6858bd7e2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+          "url('https://i.ibb.co/CP9FKjb/Whats-App-Image-2024-10-07-at-3-32-49-PM-4.jpg')",
         doble:
-          "url('https://images.unsplash.com/photo-1527037713334-5bb51b6ab028?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+          "url('https://i.ibb.co/2NnTSB3/Whats-App-Image-2024-10-07-at-3-32-49-PM-5.jpg')",
         matrimonial:
-          "url('https://images.pexels.com/photos/2506990/pexels-photo-2506990.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
+          "url('https://i.ibb.co/vYRCqD0/Whats-App-Image-2024-10-07-at-3-32-49-PM-8.jpg')",
         contact:
           "url('https://images.pexels.com/photos/821754/pexels-photo-821754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
       },

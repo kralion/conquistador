@@ -11,55 +11,22 @@ const services = [
     title: "Habitación Simple",
     href: "/simple",
     text: "Perfecta para viajeros solitarios, cuenta con cama de plaza y media y baño privado. ",
+    imgSrc:
+      "https://i.ibb.co/3vyFdRf/Whats-App-Image-2024-10-07-at-3-32-49-PM-15.jpg",
   },
   {
     title: "Habitación Doble",
     href: "/doble",
     text: "Diseñada para dos personas, ofrece camas individuales con diferentes amenities a gusto del huesped. ",
+    imgSrc:
+      "https://i.ibb.co/Mnq0Gfx/Whats-App-Image-2024-10-07-at-3-32-48-PM.jpg",
   },
   {
     title: "Habitación Matrimonial",
     href: "/matrimonial",
     text: "Con cama queen size, esta habitación es perfecta para parejas que buscan un ambiente acogedor y privado.",
-  },
-];
-
-const reviews = [
-  {
-    img: "/natasha.png",
-    name: "Liliana González",
-    location: "Lima, Perú",
-    review:
-      "¡El hotel fue fantástico! El personal fue increíblemente amable y las comodidades eran de primera categoría. Me encantó especialmente el área de la piscina.",
-  },
-  {
-    img: "/benny.png",
-    name: "Vanessa Montes",
-    location: "Cusco, Perú",
-    review:
-      "Tuve una estancia maravillosa. La habitación estaba limpia y espaciosa, y las opciones de desayuno eran deliciosas. ¡Lo recomiendo mucho!",
-  },
-  {
-    img: "/raymond.png",
-    name: "Raymond Galario",
-    location: "Arequipa, Perú",
-    review:
-      "Durante mi estadía en el hotel, me gustó mucho el ambiente y la decoración. La habitación estaba bien organizada y tenía un buen aire acondicionado.",
-  },
-];
-
-const experiences = [
-  {
-    num: 15,
-    text: "Años de Experiencia",
-  },
-  {
-    num: 250000,
-    text: "Clientes Satisfechos",
-  },
-  {
-    num: 200,
-    text: "Habitaciones Activas",
+    imgSrc:
+      "https://i.ibb.co/sgqSFv6/Whats-App-Image-2024-10-07-at-3-32-49-PM-10.jpg",
   },
 ];
 ---
@@ -82,8 +49,8 @@ const experiences = [
         Descubre el lujo que mereces: relájate, rejuvenece y revive en nuestro
         hotel, tu hogar lejos de casa."
       </p>
-      <a href="/contacto">
-        <Button text="Reservar" />
+      <a href="/habitaciones">
+        <Button text="Ver Habitaciones" />
       </a>
     </div>
   </section>
@@ -96,20 +63,26 @@ const experiences = [
     {
       services.map((service) => {
         return (
-          <div class="w-full max-w-[358px] mx-auto flex flex-col justify-center items-center gap-3 md:gap-5">
-            <h3 class="text-text-blue font-dm text-[22px] md:text-[25px] leading-loose">
-              {service.title}
-            </h3>
-            <p class="text-base md:text-[22px] tracking-tight font-jost text-text-gray leading-[33px] text-center">
-              {" "}
-              {service.text}
-            </p>
-            <a
-              href={service.href}
-              class="text-text-gray-200 hover:opacity-80 hover:underline leading-snug text-lg tracking-tight font-jost font-semibold gap-2 py-4 md:py-8 startCenter"
-            >
-              Ver Más <ArrowSec />
-            </a>
+          <div class="space-y-5">
+            <img
+              src={service.imgSrc}
+              alt="service"
+              class="rounded-lg shadow-md"
+            />
+            <div class="w-full max-w-[358px] mx-auto flex flex-col justify-center items-center gap-3 md:gap-5">
+              <h3 class="text-text-blue font-dm text-[22px] md:text-[25px] leading-loose">
+                {service.title}
+              </h3>
+              <p class="text-base md:text-[22px] tracking-tight font-jost text-text-gray leading-[33px] text-center">
+                {service.text}
+              </p>
+              <a
+                href={service.href}
+                class="text-text-gray-200 hover:opacity-80 hover:underline leading-snug text-lg tracking-tight font-jost font-semibold gap-2 py-4 md:py-8 startCenter"
+              >
+                Ver Amenidades <ArrowSec />
+              </a>
+            </div>
           </div>
         );
       })
@@ -119,97 +92,30 @@ const experiences = [
   <!-- About Section -->
 
   <section
-    class="w-full lg:max-w-[1200px] mx-auto px-12 xl:px-0 flex flex-col-reverse justify-center items-center lg:grid grid-cols-2 gap-[75px] pt-[100px] lg:pt-[200px]"
+    class="flex flex-col gap-8 lg:px-[20%] px-6 my-36 justify-center items-center py-6"
   >
-    <div
-      class="flex flex-col gap-8 max-w-[472px] items-center lg:items-start py-6"
+    <h2
+      class="text-[30px] text-center capitalize font-dm tracking-wide leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue"
     >
-      <h2
-        class="text-[30px] text-center capitalize lg:text-left font-dm tracking-wide leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue"
-      >
-        Creamos Estancias Con Estilo
-      </h2>
-      <p
-        class="text-base md:text-[22px] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]"
-      >
-        En el Hotel Conquistador, ofrecemos un ambiente acogedor y cómodo para
-        que disfrutes de tu estancia en Huanta. Nuestras habitaciones están
-        diseñadas para satisfacer tus necesidades de descanso.
+      Creamos Estancias Con Estilo
+    </h2>
+    <p
+      class="text-base md:text-[22px] text-center tracking-tight font-jost text-text-gray leading-[33px]"
+    >
+      En el Hotel Conquistador, ofrecemos un ambiente acogedor y cómodo para que
+      disfrutes de tu estancia en Huanta. Nuestras habitaciones están diseñadas
+      para satisfacer tus necesidades de descanso.
+    </p>
+    <div class="flex gap-4 pt-3 items-center">
+      <CallIcon />
+      <p class="flex flex-col text-text-gray-200 font-jost tracking-tight">
+        <span class="text-2xl font-bold leading-9">999 999 999</span>
+        <span class="text-[22px] leading-8">Llámanos en cualquier momento</span>
       </p>
-      <div class="flex gap-4 pt-3 items-center">
-        <CallIcon />
-        <p class="flex flex-col text-text-gray-200 font-jost tracking-tight">
-          <span class="text-2xl font-bold leading-9">999 999 999</span>
-          <span class="text-[22px] leading-8"
-            >Llámanos en cualquier momento</span
-          >
-        </p>
-      </div>
-      <a href="/contacto">
-        <Button text="Reservar" />
-      </a>
     </div>
-
-    <img
-      src="https://images.pexels.com/photos/186181/pexels-photo-186181.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      alt=""
-      class="rounded-tr-[100px] rounded-bl-[100px]"
-    />
-  </section>
-
-  <!-- What People Think About Us Section -->
-
-  <section
-    class="lg:max-w-[1200px] px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px]"
-  >
-    <div
-      class="w-full flex flex-col bg-primary-300 rounded-[48px] px-6 py-[88px]"
-    >
-      <h2
-        class="font-dm tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[30px] lg:text-[50px] w-full lg:max-w-[50%] pb-9 mx-auto"
-      >
-        Lo que la gente piensa de nosotros
-      </h2>
-      <div class="flex flex-col gap-8 lg:gap-10 lg:flex-row justify-between">
-        {
-          reviews.map((rev) => {
-            return (
-              <div class="w-full bg-white max-w-[370px] px-[37px] py-[53px] rounded-3xl mx-auto flex flex-col justify-center gap-4 md:gap-6">
-                <div class="flex flex-col sm:flex-row gap-6 items-center">
-                  <img src={rev.img} alt="" />
-                  <p class="flex flex-col tracking-tight leading-9">
-                    <span class="text-primary-200 text-lg lg:text-[25px] font-dm">
-                      {rev.name}
-                    </span>
-                    <span class="text-text-gray-200 text-base lg:text-lg font-jost">
-                      {rev.location}
-                    </span>
-                  </p>
-                </div>
-                <p class="font-jost tracking-tight leading-8 text-base text-center sm:text-left text-text-gray lg:text-[22px]">
-                  {rev.review}
-                </p>
-              </div>
-            );
-          })
-        }
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience Section -->
-  <section
-    class="w-full bg-primary-300 px-12 xl:px-0 mx-auto mt-[100px] lg:mt-[200px] py-[151px]"
-  >
-    <div
-      class="w-full max-w-[1200px] mx-auto flex lg:justify-center items-center overflow-x-scroll no-scrollbar"
-    >
-      {
-        experiences.map((exp, i) => {
-          return <Experience text={exp.text} num={exp.num} i={i} client:load />;
-        })
-      }
-    </div>
+    <a href="/habitaciones">
+      <Button text="Ver Habitaciones" />
+    </a>
   </section>
 </MainLayout>
 
