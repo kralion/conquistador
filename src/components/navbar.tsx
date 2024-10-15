@@ -7,12 +7,12 @@ const Navbar = () => {
   const [toggled, setToggled] = useState(false);
   const matches = useMediaQuery("(min-width: 1280px)");
 
-  const linkStyle = "text-xl leading-6 font-jost text-primary-200";
+  const linkStyle = "text-xl leading-6 font-jost text-white hover:underline";
 
   return (
-    <div className=" lg:px-12 px-4  m-auto w-full lg:py-7 py-3 flex  justify-between items-center lg:sticky lg:top-0 lg:z-50 lg:backdrop-blur-lg lg:bg-transparent">
+    <div className=" lg:px-12 px-4  m-auto w-full  py-3 flex  justify-between items-center lg:sticky lg:top-0 lg:z-50 lg:backdrop-blur-lg lg:bg-[#640008] drop-shadow-xl">
       <a href="/">
-        <img src="/logo.svg" alt="logo" className="w-2/3  " />
+        <img src="/logo.jpeg" alt="logo" className="w-1/3" />
       </a>
 
       {/* Nav List for Desktop */}
