@@ -16,16 +16,17 @@ const Footer = () => {
             lejos de casa.
           </p>
           <div className="flex gap-5 ">
-            <p className=" font-jost text-gray-300 ">
-              Síguenos en nuestras redes{" "}
-            </p>
-
-            <a href="/">
+            <a
+              href="https://www.facebook.com/profile.php?id=100080841819480&mibextid=ZbWKwL"
+              target="_blank"
+              className="hover:underline flex gap-3"
+            >
+              <p className=" font-jost text-gray-300 ">Síguenos en Facebook </p>
               <Facebook />
             </a>
-            <a href="/">
+            {/* <a href="/">
               <Instagram />
-            </a>
+            </a> */}
           </div>
         </div>
         <div className="col-span-1 flex flex-col gap-4">
@@ -44,12 +45,6 @@ const Footer = () => {
               className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-white"
             >
               Habitaciones
-            </a>
-            <a
-              href="/contacto"
-              className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-white"
-            >
-              Contacto
             </a>
           </div>
         </div>
@@ -90,7 +85,7 @@ const Footer = () => {
               hotelconquistadorhuanta@gmail.com
             </p>
             <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-white">
-              +51 999-999-999
+              +51 967 702 720
             </p>
           </div>
         </div>

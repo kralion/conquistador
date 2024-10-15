@@ -10,9 +10,9 @@ const Navbar = () => {
   const linkStyle = "text-xl leading-6 font-jost text-white hover:underline";
 
   return (
-    <div className=" lg:px-12 px-4  m-auto w-full  py-3 flex  justify-between items-center lg:sticky lg:top-0 lg:z-50 lg:backdrop-blur-lg lg:bg-[#640008] drop-shadow-xl">
+    <div className=" lg:px-12 px-4  m-auto w-full  py-3 flex  justify-between items-center lg:sticky lg:top-0 lg:z-50 bg-[#640008] ">
       <a href="/">
-        <img src="/logo.jpeg" alt="logo" className="w-1/3" />
+        <img src="/logo.jpeg" alt="logo" className="lg:w-1/4 w-1/2" />
       </a>
 
       {/* Nav List for Desktop */}
@@ -27,9 +27,6 @@ const Navbar = () => {
           <a href="/habitaciones" className={linkStyle}>
             Habitaciones
           </a>
-          <a href="/contacto" className={linkStyle}>
-            Contacto
-          </a>
         </nav>
       )}
 
@@ -40,11 +37,11 @@ const Navbar = () => {
         >
           <motion.span
             animate={{ rotateZ: toggled ? 45 : 0, y: toggled ? 8 : 0 }}
-            className="block h-0.5 w-8 bg-black"
+            className="block h-0.5 w-8 bg-white"
           ></motion.span>
           <motion.span
             animate={{ width: toggled ? 0 : 24 }}
-            className="block h-0.5 w-6 bg-black"
+            className="block h-0.5 w-6 bg-white"
           ></motion.span>
           <motion.span
             animate={{
@@ -52,7 +49,7 @@ const Navbar = () => {
               y: toggled ? -8 : 0,
               width: toggled ? 32 : 16,
             }}
-            className="block h-0.5 w-4 bg-black"
+            className="block h-0.5 w-4 bg-white"
           ></motion.span>
         </div>
       )}
@@ -61,19 +58,25 @@ const Navbar = () => {
         <motion.nav
           initial={{ opacity: 0, x: 25 }}
           animate={{ opacity: 1, x: 0 }}
-          className="flex flex-col h-100dvh fixed z-50  bg-white w-full text-black bottom-0 left-0 top-32 gap-6 justify-center  items-center "
+          className="flex flex-col h-100dvh fixed z-50  bg-white w-full text-black bottom-0 left-0 top-24 gap-6 justify-center  items-center "
         >
-          <a href="/" className={linkStyle}>
+          <a
+            href="/"
+            className="text-3xl tracking-tight font-jost  active:opacity-50"
+          >
             Inicio
           </a>
-          <a href="/nosotros" className={linkStyle}>
+          <a
+            href="/nosotros"
+            className="text-3xl tracking-tight font-jost  active:opacity-50"
+          >
             Nosotros
           </a>
-          <a href="/habitaciones" className={linkStyle}>
+          <a
+            className="text-3xl tracking-tight font-jost  active:opacity-50"
+            href="/habitaciones"
+          >
             Habitaciones
-          </a>
-          <a href="/contacto" className={linkStyle}>
-            Reservar
           </a>
         </motion.nav>
       )}
